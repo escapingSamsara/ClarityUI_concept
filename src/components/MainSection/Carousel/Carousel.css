@@ -101,6 +101,7 @@
   text-decoration: none;
   text-transform: lowercase;
   font-size: 0.75rem;
+  border-top: 1px solid transparent;
 }
 .card-tips:hover {
   color: #000000;
@@ -112,10 +113,4 @@
 .fa-icon:hover {
   color: #5045e6;
   transition: all 0.2s;
-}
-
-@media screen and (max-width: 1200px) {
-  .card-tips {
-    border: none;
-  }
 }
