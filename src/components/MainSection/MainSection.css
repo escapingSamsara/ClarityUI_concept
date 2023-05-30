@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
 }
+
 .main-container-1,
 .main-container-2 {
   height: 100%;
@@ -28,6 +29,7 @@
   width: 50%;
   position: relative;
 }
+
 .main-header-box {
   display: flex;
   flex-direction: column;
@@ -91,7 +93,7 @@
   padding: 0.25rem;
   margin-top: 0.5rem;
   border-radius: 10px;
-  width: 400px;
+  max-width: 500px;
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 1px 15px rgba(104, 104, 104, 0.305);
@@ -124,4 +126,64 @@
   font-style: italic;
   padding-top: 1rem;
   text-align: center;
+}
+@media screen and (max-width: 1300px) {
+  .main-header {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-header {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-container-box {
+    flex-direction: column;
+  }
+  .main-header {
+    font-size: 1rem;
+  }
+  .main-container-1 {
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .main-container-2 {
+    width: 100%;
+  }
+  .main-container-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-container-box {
+    flex-direction: column;
+  }
+  .main-header {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  .main-container-1 {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container-2 {
+    width: 100%;
+    height: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .main-container-3 {
+    display: none;
+  }
+  .main-header img {
+    display: none;
+  }
+  .main-cta-text {
+    line-height: 1.25rem;
+    font-size: 1rem;
+    color: inherit;
+    margin: 1.75rem 0;
+  }
 }

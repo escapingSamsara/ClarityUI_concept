@@ -12,7 +12,7 @@
 }
 .carousel-card {
   height: 100%;
-  width: 95%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 1px 1px 15px rgba(104, 104, 104, 0.41);
   transition: all 0.3s ease-in-out;
@@ -48,12 +48,22 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 10px;
-
   border-bottom-right-radius: 10px;
   padding: 1rem 1.5rem;
 }
 .card-text-content {
   text-align: left;
+}
+.card-tips {
+  display: flex;
+  padding: 0.75rem 0;
+  color: grey;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 0.75rem;
+  flex-direction: row;
 }
 .card-text-content h4 {
   background-color: rgb(255, 255, 255);

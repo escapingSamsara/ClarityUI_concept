@@ -19,7 +19,7 @@ const Carousel = () => {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1000, // Screen width at which the settings will change
+        breakpoint: 500, // Screen width at which the settings will change
         settings: {
           slidesToShow: 1, // Number of slides to show at this breakpoint
         },
@@ -43,17 +43,18 @@ const Carousel = () => {
               <div className="card-text card-1">
                 <div className="card-text-content">
                   <h4>How to write content about your UX design</h4>
-
                   <p>
                     Crafting seamless UX: Unleash the potential of user-centric
                     design.
                   </p>
                 </div>
-                <p>tips</p>
-                <p>7 Min Read</p>
-                <p>
-                  <FontAwesomeIcon icon={faTurnUp} className="fa-icon" />
-                </p>
+                <div className="card-tips">
+                  <p>tips</p>
+                  <p>7 Min Read</p>
+                  <p>
+                    <FontAwesomeIcon icon={faTurnUp} className="fa-icon" />
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -78,12 +79,13 @@ const Carousel = () => {
                     captivating design app.
                   </p>
                 </div>
-
-                <p>tutorial</p>
-                <p>4 Min Read</p>
-                <p>
-                  <FontAwesomeIcon icon={faTurnUp} className="fa-icon" />
-                </p>
+                <div className="card-tips">
+                  <p>tutorial</p>
+                  <p>4 Min Read</p>
+                  <p>
+                    <FontAwesomeIcon icon={faTurnUp} className="fa-icon" />
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -104,12 +106,13 @@ const Carousel = () => {
                   <h4>11 tips to improve your worklow</h4>
                   <p>Boost your mixing workflow with these 11 valuable tips.</p>
                 </div>
-
-                <p>growth</p>
-                <p>7 Min Read</p>
-                <p>
-                  <FontAwesomeIcon icon={faTurnUp} className="fa-icon" />
-                </p>
+                <div className="card-tips">
+                  <p>growth</p>
+                  <p>7 Min Read</p>
+                  <p>
+                    <FontAwesomeIcon icon={faTurnUp} className="fa-icon" />
+                  </p>
+                </div>
               </div>
             </div>
           </div>
