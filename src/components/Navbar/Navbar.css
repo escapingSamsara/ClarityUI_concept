@@ -46,8 +46,8 @@
 }
 .navbar-item a {
   text-decoration: none;
-  color: black;
   padding: 0 1.25rem;
+  color: inherit;
   font-weight: bold;
 }
 .join-btn-box {
@@ -56,9 +56,20 @@
   align-items: center;
   width: 30%;
 }
+.theme-toggle-btn {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  outline: none;
+  margin-right: 1rem;
+  border: 1px solid transparent;
+}
+.fa-solid {
+  font-size: 1.25rem;
+}
 .join-btn {
   outline: none;
-  background-color: black;
+  background-color: #6056ed;
   color: white;
   padding: 0.75rem 1rem;
   border-radius: 10px;

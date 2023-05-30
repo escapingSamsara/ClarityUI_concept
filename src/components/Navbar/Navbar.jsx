@@ -1,6 +1,6 @@
 import logo from '../../assets/figma_logo.png'
 import './Navbar.css'
-const Navbar = () => {
+const Navbar = ({ toggleTheme, theme }) => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
@@ -23,6 +23,17 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="join-btn-box">
+            <button
+              onClick={toggleTheme}
+              type="button"
+              className={`theme-toggle-btn ${theme}`}
+            >
+              <i
+                className={`${
+                  theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
+                }`}
+              ></i>
+            </button>
             <button type="button" className="join-btn">
               Join Email List
             </button>

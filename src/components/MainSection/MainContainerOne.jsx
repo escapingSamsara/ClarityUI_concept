@@ -1,6 +1,30 @@
+import { useState } from 'react'
 import graphicIcon from '../../assets/graphic-design.png'
 import starIcon from '../../assets/star.png'
-const MainContainerOne = () => {
+
+const MainContainerOne = ({ toast }) => {
+  const [email, setEmail] = useState('')
+  const [isValid, setIsValid] = useState(true)
+
+  const handleInputChange = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+    if (emailRegex.test(email)) {
+      // Valid email
+      setIsValid(true)
+      toast.success('you subscribed successfully!')
+    } else {
+      // Invalid email
+      setIsValid(false)
+      toast.error('Invalid email! Please enter a valid email address.')
+    }
+    setEmail('')
+  }
+
   return (
     <div className="main-container-1">
       <div className="main-header-box">
@@ -17,16 +41,17 @@ const MainContainerOne = () => {
           </p>
         </div>
         <div className="main-cta">
-          <form action="submit-form">
+          <form action="submit-form" onSubmit={handleSubmit}>
             <p className="submit-form-cta">
               Join to get free updates every week
             </p>
             <div className="input-btn-holder">
               <input
+                value={email}
+                onChange={handleInputChange}
                 type="text"
                 className="email-input"
-                placeholder="Enter email address"
-                required
+                placeholder="Enter your email address!"
               />
               <button type="submit" className="submit-btn">
                 Join now

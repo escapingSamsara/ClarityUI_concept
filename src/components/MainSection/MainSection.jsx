@@ -3,12 +3,12 @@ import MainContainerOne from './MainContainerOne'
 import MainContainerTwo from './MainContainerTwo'
 import './MainSection.css'
 
-const MainSection = () => {
+const MainSection = ({ toast, theme }) => {
   return (
     <div className="main-section-container">
       <div className="main-container-box">
-        <MainContainerOne />
-        <MainContainerTwo />
+        <MainContainerOne toast={toast} />
+        <MainContainerTwo theme={theme} />
       </div>
       <ContainerThree />
     </div>
