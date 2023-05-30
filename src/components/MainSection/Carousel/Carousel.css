@@ -113,3 +113,9 @@
   color: #5045e6;
   transition: all 0.2s;
 }
+
+@media screen and (max-width: 1200px) {
+  .card-tips {
+    border: none;
+  }
+}
